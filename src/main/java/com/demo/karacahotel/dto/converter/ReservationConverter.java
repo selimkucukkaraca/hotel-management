@@ -19,6 +19,7 @@ public class ReservationConverter {
 
     public ReservationDto convertReservationToReservationDto(Reservation from){
         return new ReservationDto(
+                from.getPublicId(),
                 from.getReservationStartDate(),
                 from.getReservationFinishDate(),
                 from.getNumberOfGuests(),

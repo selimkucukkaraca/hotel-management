@@ -8,7 +8,7 @@ public class CreateReservationRequest {
     private String reservationStartDate;
     private String reservationFinishDate;
     private int numberOfGuests;
+    private String roomPublicId;
     private CreateCustomerRequest customerRequest;
     private CreateCreditCardRequest creditCardRequest;
-
 }

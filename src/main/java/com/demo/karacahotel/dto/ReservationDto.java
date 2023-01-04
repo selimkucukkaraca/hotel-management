@@ -9,6 +9,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class ReservationDto {
 
+    private String publicId;
     private String reservationStartDate;
     private String reservationFinishDate;
     private int numberOfGuests;
