@@ -18,7 +18,7 @@ public class CustomerService {
         this.customerConverter = customerConverter;
     }
 
-    protected Customer save(CreateCustomerRequest request){
+    public CustomerDto save(CreateCustomerRequest request){
         var saved = new Customer(
                 request.getIdentificationNumber(),
                 request.getName(),
@@ -32,7 +32,8 @@ public class CustomerService {
             throw new RuntimeException();
         }
 
-        return customerRepository.save(saved);
+        customerRepository.save(saved);
+        return null;
     }
 
     public void delete(String identificationNumber){
